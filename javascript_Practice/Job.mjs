@@ -16,6 +16,11 @@ export class Job {
 		this.maxNumOfDaysForAdvertising = maxNumOfDaysForAdvertising;
 	}
 
+	constructor3(title, jobDescription) {
+		this.title = title;
+		this.jobDescription = jobDescription;
+	}
+
 	set title(title){
 		this.title = title;
 	}
@@ -60,6 +65,11 @@ export class Job {
 		let _toString = this.title + ", " + this.jobDescription + ", C: " + 
 		                this.curNumOfDaysOfAdvertising + ", M: " + 
 		                this.maxNumOfDaysForAdvertising;
+        return _toString;
+	}
+
+	toString3(){
+		let _toString = "T: "+this.title + ", J; " + this.jobDescription;
         return _toString;
 	}
 }

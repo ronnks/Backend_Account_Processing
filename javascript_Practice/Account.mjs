@@ -17,10 +17,8 @@ export class Account {
 		this.connectionList.push(connection);
 	}
 
-	constructor3(){
-		this.name = "default_name";
-		this.dateCreated = "02/20/2019";
-		this.eMail = "default@defaultMail.com";
+	constructor3(name){
+		this.name = name;
 	}
 
 	set name(name){

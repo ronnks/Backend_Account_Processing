@@ -6,21 +6,29 @@ export class CommunityAccount extends Account{
 	topicOfInterestList = []; 
 	link; event;
 
-	constructor(){
-		super();
+	constructor(topicOfInterest, link, event){
+		super.constructor();
 		this.link = "default_link";
 		this.event = "default_event";
 	}
 
-	constructor2(name, dateCreated, eMail, connection, topicOfInterest, link, event){
+	constructor2(name, dateCreated, eMail, connection){
 		super.constructor2(name, dateCreated, eMail, connection);
+		this.name = name;
+		this.dateCreated = dateCreated;
+		this.eMail = eMail;
+		this.connection = connection;
+	}
+
+	constructor3(topicOfInterest, link, event){
+		super.constructor3();
 		this.topicOfInterestList.push(topicOfInterest);
 		this.link = link;
 		this.event = event;
 	}
 
-	constructor3(topicOfInterest, link, event){
-		super.constructor3();
+	constructor2(name, dateCreated, eMail, connection, topicOfInterest, link, event){
+		super.constructor2(name, dateCreated, eMail, connection);
 		this.topicOfInterestList.push(topicOfInterest);
 		this.link = link;
 		this.event = event;
